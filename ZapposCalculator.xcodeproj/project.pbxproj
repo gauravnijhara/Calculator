@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		960973851C66F55B00901D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960973841C66F55B00901D0D /* AppDelegate.swift */; };
+		960973871C66F55B00901D0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960973861C66F55B00901D0D /* ViewController.swift */; };
+		9609738A1C66F55B00901D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960973881C66F55B00901D0D /* Main.storyboard */; };
+		9609738C1C66F55B00901D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609738B1C66F55B00901D0D /* Assets.xcassets */; };
+		9609738F1C66F55B00901D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */; };
+		96A6C2281C677310003E25F6 /* OperationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6C2271C677310003E25F6 /* OperationEvaluator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0224FA6FC1025BE9AAC57A8D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		960973811C66F55B00901D0D /* ZapposCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapposCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		960973841C66F55B00901D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		960973861C66F55B00901D0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		960973891C66F55B00901D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9609738B1C66F55B00901D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9609738E1C66F55B00901D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		960973901C66F55B00901D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A6C2271C677310003E25F6 /* OperationEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationEvaluator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9609737E1C66F55B00901D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960973781C66F55B00901D0D = {
+			isa = PBXGroup;
+			children = (
+				960973831C66F55B00901D0D /* ZapposCalculator */,
+				960973821C66F55B00901D0D /* Products */,
+				BABD97D72D1069C42EA50557 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		960973821C66F55B00901D0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960973811C66F55B00901D0D /* ZapposCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960973831C66F55B00901D0D /* ZapposCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				960973841C66F55B00901D0D /* AppDelegate.swift */,
+				960973861C66F55B00901D0D /* ViewController.swift */,
+				96A6C2271C677310003E25F6 /* OperationEvaluator.swift */,
+				960973881C66F55B00901D0D /* Main.storyboard */,
+				9609738B1C66F55B00901D0D /* Assets.xcassets */,
+				9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */,
+				960973901C66F55B00901D0D /* Info.plist */,
+			);
+			path = ZapposCalculator;
+			sourceTree = "<group>";
+		};
+		BABD97D72D1069C42EA50557 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0224FA6FC1025BE9AAC57A8D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960973801C66F55B00901D0D /* ZapposCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960973931C66F55B00901D0D /* Build configuration list for PBXNativeTarget "ZapposCalculator" */;
+			buildPhases = (
+				9609737D1C66F55B00901D0D /* Sources */,
+				9609737E1C66F55B00901D0D /* Frameworks */,
+				9609737F1C66F55B00901D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZapposCalculator;
+			productName = ZapposCalculator;
+			productReference = 960973811C66F55B00901D0D /* ZapposCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960973791C66F55B00901D0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Gaurav Nijhara";
+				TargetAttributes = {
+					960973801C66F55B00901D0D = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 77VTZQ7SL5;
+					};
+				};
+			};
+			buildConfigurationList = 9609737C1C66F55B00901D0D /* Build configuration list for PBXProject "ZapposCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 960973781C66F55B00901D0D;
+			productRefGroup = 960973821C66F55B00901D0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960973801C66F55B00901D0D /* ZapposCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9609737F1C66F55B00901D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9609738F1C66F55B00901D0D /* LaunchScreen.storyboard in Resources */,
+				9609738C1C66F55B00901D0D /* Assets.xcassets in Resources */,
+				9609738A1C66F55B00901D0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9609737D1C66F55B00901D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6C2281C677310003E25F6 /* OperationEvaluator.swift in Sources */,
+				960973871C66F55B00901D0D /* ViewController.swift in Sources */,
+				960973851C66F55B00901D0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		960973881C66F55B00901D0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960973891C66F55B00901D0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9609738E1C66F55B00901D0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		960973911C66F55B00901D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		960973921C66F55B00901D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960973941C66F55B00901D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ZapposCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GN.ZapposCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		960973951C66F55B00901D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ZapposCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GN.ZapposCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9609737C1C66F55B00901D0D /* Build configuration list for PBXProject "ZapposCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960973911C66F55B00901D0D /* Debug */,
+				960973921C66F55B00901D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960973931C66F55B00901D0D /* Build configuration list for PBXNativeTarget "ZapposCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960973941C66F55B00901D0D /* Debug */,
+				960973951C66F55B00901D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960973791C66F55B00901D0D /* Project object */;
+}
