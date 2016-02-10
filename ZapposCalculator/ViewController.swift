@@ -64,6 +64,7 @@ class ViewController: UIViewController {
     var operationStack:[OpType] = [OpType]()
     var shouldUpdateResult:Bool = true;
     var shouldResetNumber = false;
+    var shouldEmptyStack:Bool = false;
     var prevResult:[NSMutableString] = [NSMutableString]();
     
     @IBOutlet weak var landscapeLabel: UILabel!
@@ -213,9 +214,16 @@ class ViewController: UIViewController {
     
     @IBAction func calculateResult(sender: AnyObject) {
         
-        while(!operationStack.isEmpty)
+        if(sender as! NSObject == self)
         {
             self.updateResultOnLabel();
+        }
+        else
+        {
+            while(!operationStack.isEmpty)
+            {
+                self.updateResultOnLabel();
+            }
         }
     }
 

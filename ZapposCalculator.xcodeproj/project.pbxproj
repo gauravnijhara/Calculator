@@ -12,6 +12,12 @@
 		9609738A1C66F55B00901D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960973881C66F55B00901D0D /* Main.storyboard */; };
 		9609738C1C66F55B00901D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9609738B1C66F55B00901D0D /* Assets.xcassets */; };
 		9609738F1C66F55B00901D0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */; };
+		965FD3A41C6AC461000899AD /* calculatorGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3A21C6AC461000899AD /* calculatorGradient.png */; };
+		965FD3A51C6AC461000899AD /* calculatorGradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3A31C6AC461000899AD /* calculatorGradient@2x.png */; };
+		965FD3A81C6AE0A9000899AD /* calculatorButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3A61C6AE0A9000899AD /* calculatorButton.png */; };
+		965FD3A91C6AE0A9000899AD /* calculatorButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3A71C6AE0A9000899AD /* calculatorButton@2x.png */; };
+		965FD3AC1C6AE192000899AD /* calculatorButton_op.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3AA1C6AE192000899AD /* calculatorButton_op.png */; };
+		965FD3AD1C6AE192000899AD /* calculatorButton_op@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3AB1C6AE192000899AD /* calculatorButton_op@2x.png */; };
 		96A6C2281C677310003E25F6 /* OperationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6C2271C677310003E25F6 /* OperationEvaluator.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +30,12 @@
 		9609738B1C66F55B00901D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9609738E1C66F55B00901D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960973901C66F55B00901D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965FD3A21C6AC461000899AD /* calculatorGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculatorGradient.png; sourceTree = "<group>"; };
+		965FD3A31C6AC461000899AD /* calculatorGradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorGradient@2x.png"; sourceTree = "<group>"; };
+		965FD3A61C6AE0A9000899AD /* calculatorButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculatorButton.png; sourceTree = "<group>"; };
+		965FD3A71C6AE0A9000899AD /* calculatorButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorButton@2x.png"; sourceTree = "<group>"; };
+		965FD3AA1C6AE192000899AD /* calculatorButton_op.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculatorButton_op.png; sourceTree = "<group>"; };
+		965FD3AB1C6AE192000899AD /* calculatorButton_op@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorButton_op@2x.png"; sourceTree = "<group>"; };
 		96A6C2271C677310003E25F6 /* OperationEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationEvaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +76,23 @@
 				960973881C66F55B00901D0D /* Main.storyboard */,
 				9609738B1C66F55B00901D0D /* Assets.xcassets */,
 				9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */,
+				965FD3A11C6AC461000899AD /* Resources */,
 				960973901C66F55B00901D0D /* Info.plist */,
 			);
 			path = ZapposCalculator;
+			sourceTree = "<group>";
+		};
+		965FD3A11C6AC461000899AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				965FD3AA1C6AE192000899AD /* calculatorButton_op.png */,
+				965FD3AB1C6AE192000899AD /* calculatorButton_op@2x.png */,
+				965FD3A61C6AE0A9000899AD /* calculatorButton.png */,
+				965FD3A71C6AE0A9000899AD /* calculatorButton@2x.png */,
+				965FD3A21C6AC461000899AD /* calculatorGradient.png */,
+				965FD3A31C6AC461000899AD /* calculatorGradient@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BABD97D72D1069C42EA50557 /* Frameworks */ = {
@@ -136,8 +162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965FD3A91C6AE0A9000899AD /* calculatorButton@2x.png in Resources */,
 				9609738F1C66F55B00901D0D /* LaunchScreen.storyboard in Resources */,
+				965FD3A81C6AE0A9000899AD /* calculatorButton.png in Resources */,
+				965FD3A51C6AC461000899AD /* calculatorGradient@2x.png in Resources */,
+				965FD3A41C6AC461000899AD /* calculatorGradient.png in Resources */,
+				965FD3AD1C6AE192000899AD /* calculatorButton_op@2x.png in Resources */,
 				9609738C1C66F55B00901D0D /* Assets.xcassets in Resources */,
+				965FD3AC1C6AE192000899AD /* calculatorButton_op.png in Resources */,
 				9609738A1C66F55B00901D0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
