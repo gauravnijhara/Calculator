@@ -34,6 +34,13 @@ enum OpType
     NONE
 }
 
+enum Exceptions:ErrorType
+{
+    case DivideByZero,
+    InfiniteValue,
+    IllegalOperation
+}
+
 class ViewController: UIViewController {
 
     var result:NSMutableString = ""
@@ -81,7 +88,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
 
     }
 
@@ -214,16 +220,24 @@ class ViewController: UIViewController {
     
     @IBAction func calculateResult(sender: AnyObject) {
         
-        if(sender as! NSObject == self)
+        do
         {
-            self.updateResultOnLabel();
-        }
-        else
-        {
-            while(!operationStack.isEmpty)
+            if(sender as! NSObject == self)
             {
-                self.updateResultOnLabel();
+                try self.updateResultOnLabel()
             }
+            else
+            {
+                while(!operationStack.isEmpty)
+                {
+                    try self.updateResultOnLabel();
+                }
+            }
+        }
+        catch
+        {
+            self.clearPressed(self);
+            self.mainScreenLabel.text = "Error";
         }
     }
 
@@ -370,14 +384,14 @@ class ViewController: UIViewController {
 
     @IBAction func clearPressed(sender: AnyObject) {
         
-        currentNum = NSMutableString(string: "");
+        currentNum = NSMutableString(string: "0");
         result = NSMutableString(string: "");
         operationStack.removeAll();
         operationStack.append(.NONE)
 
     }
     
-    func updateResultOnLabel()
+    func updateResultOnLabel() throws
     {
         let operation:OpType = operationStack.popLast()!
         
@@ -399,6 +413,11 @@ class ViewController: UIViewController {
                 currentNum.deleteCharactersInRange(NSMakeRange(0, currentNum.length));
             break
             case .DIVIDE:
+                if currentNum.integerValue == 0
+                {
+                    throw Exceptions.DivideByZero
+                }
+                
                 let res = result.doubleValue / currentNum.doubleValue;
                 result = NSMutableString(format: "%lf", res)
                 currentNum.deleteCharactersInRange(NSMakeRange(0, currentNum.length));
@@ -448,95 +467,114 @@ class ViewController: UIViewController {
                 if(currentNum.length > 0)
                 {
                     res = sinh(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .SINH:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = cos(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .COS:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = cosh(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .COSH:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = sin(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .TAN:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = tan(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .TANH:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = tanh(currentNum.doubleValue*M_PI/180);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .NATURAL_LOG:
                 var res:Double?
                 if(currentNum.length > 0)
                 {
                     res = log(currentNum.doubleValue);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 break;
             case .LOG_BASE10:
                 var res:Double?
-                if(currentNum.length > 0)
+                if(currentNum.integerValue != 0)
                 {
                     res = log(currentNum.doubleValue)/log(10);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+                else
+                {
+                    throw Exceptions.InfiniteValue;
+                }
                 break;
             case .FACTORIAL:
                 var res:Double?
-                if(currentNum.length > 0)
+                if(currentNum.integerValue > 0)
                 {
                     res = getFactorial(currentNum.doubleValue);
+                    let formatter:NSNumberFormatter = NSNumberFormatter();
+                    formatter.numberStyle = .DecimalStyle;
+                    currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
                 }
-                let formatter:NSNumberFormatter = NSNumberFormatter();
-                formatter.numberStyle = .DecimalStyle;
-                currentNum  = NSMutableString(string: (formatter.stringFromNumber(NSNumber(double: res!)))!)
+                else
+                {
+                    throw Exceptions.IllegalOperation;
+                }
                 break;
             case .POW_UNARY:
                 var res:Double?
-                if(currentNum.length > 0)
+                if(currentNum.integerValue >= 0)
                 {
+                    if (power < 0 && currentNum.integerValue == 0)
+                    {
+                        throw Exceptions.DivideByZero;
+                    }
+                    
                     if(power != 0)
                     {
                         res = pow(currentNum.doubleValue,power!);
@@ -545,18 +583,33 @@ class ViewController: UIViewController {
                     {
                         
                     }
+                    currentNum = NSMutableString(format: "%lf", res!)
                 }
-
-                currentNum = NSMutableString(format: "%lf", res!)
+                else
+                {
+                    throw Exceptions.IllegalOperation
+                }
 
                 break;
             case .POW_BINARY:
                 var res:Double?
-                if(currentNum.length > 0)
+                if(currentNum.integerValue >= 0)
                 {
+                    if(power == -1 && currentNum.integerValue == 0)
+                    {
+                        throw Exceptions.DivideByZero;
+                    }
+
                     res = pow(result.doubleValue,pow(currentNum.doubleValue,power!));
+                    result = NSMutableString(format: "%lf", res!)
                 }
-                result = NSMutableString(format: "%lf", res!)
+                else
+                {
+                     if (currentNum.integerValue < 0)
+                    {
+                        throw Exceptions.IllegalOperation;
+                    }
+                }
                 currentNum.deleteCharactersInRange(NSMakeRange(0, currentNum.length));
                 break;
             case .POW_10:

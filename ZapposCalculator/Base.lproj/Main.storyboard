@@ -23,7 +23,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="dGL-3o-bee">
                                 <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-CT-ffV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8mp-CT-ffV">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -189,7 +189,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkR-HG-tCz">
                                                 <rect key="frame" x="0.0" y="144" width="52" height="36"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="42"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
                                                 <state key="normal" title="±" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -224,7 +224,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLO-bU-Lsc">
                                                 <rect key="frame" x="0.0" y="72" width="52" height="36"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="50"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
                                                 <state key="normal" title="+" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -234,7 +234,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-zq-E3D">
                                                 <rect key="frame" x="0.0" y="108" width="52" height="36"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="50"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
                                                 <state key="normal" title="÷" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -244,7 +244,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCU-Qx-B5S">
                                                 <rect key="frame" x="0.0" y="144" width="52" height="36"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="38"/>
                                                 <state key="normal" title="=" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -460,7 +460,7 @@
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9e-pj-OPY">
                                                 <rect key="frame" x="46" y="0.0" width="46" height="30"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                 <state key="normal" title="x^(1/y)" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -508,7 +508,7 @@
                                         <subviews>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8S-2f-yNs">
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
                                                 <state key="normal" title="10^x" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -534,7 +534,7 @@
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k5-Vc-xPU">
                                                 <rect key="frame" x="92" y="0.0" width="46" height="30"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                 <state key="normal" title="log(10)" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -569,15 +569,15 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVl-0F-pNl">
                                                 <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
-                                                <state key="normal" title="Undo" backgroundImage="calculatorButton_op.png">
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                                <state key="normal" title="↺" backgroundImage="calculatorButton_op.png">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="signChangePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89E-FF-IBM"/>
+                                                    <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEf-rx-hCh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMM-4b-Q47">
@@ -589,6 +589,9 @@
                                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                                     <rect key="frame" x="48" y="0.0" width="48" height="30"/>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="signChangePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFJ-1m-Snx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6x-YV-Beg">
                                                 <rect key="frame" x="92" y="0.0" width="46" height="30"/>
@@ -736,7 +739,6 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="decimalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pb8-Nm-Lg9"/>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cqu-3M-X9L"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -872,7 +874,7 @@
                                 <variation key="heightClass=compact" alignment="fill" distribution="fillProportionally"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QUO-hb-9r4" firstAttribute="top" secondItem="dGL-3o-bee" secondAttribute="bottom" id="7Dc-9g-pmX"/>
                             <constraint firstItem="dGL-3o-bee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DM9-Uu-WGj"/>
@@ -906,9 +908,13 @@
                                 <exclude reference="lPg-Y3-MiE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7Dc-9g-pmX"/>
-                                <exclude reference="UAw-Sm-PB9"/>
-                                <exclude reference="xgy-Bg-6A7"/>
+                                <exclude reference="Ffh-Wh-oXh"/>
+                                <exclude reference="ERZ-L3-Sd8"/>
+                                <exclude reference="JoW-Yz-bIg"/>
+                                <exclude reference="LVh-3K-2bA"/>
+                                <exclude reference="Qfa-MV-rya"/>
+                                <exclude reference="WGf-iT-IEO"/>
+                                <exclude reference="Yj4-fQ-fMO"/>
                                 <exclude reference="DM9-Uu-WGj"/>
                                 <exclude reference="Eug-G0-Hcq"/>
                                 <exclude reference="Lnp-Ml-yRA"/>
@@ -917,13 +923,9 @@
                                 <exclude reference="oJc-dH-OBA"/>
                                 <exclude reference="qW5-yu-kI2"/>
                                 <exclude reference="z4i-Yc-XMt"/>
-                                <exclude reference="ERZ-L3-Sd8"/>
-                                <exclude reference="JoW-Yz-bIg"/>
-                                <exclude reference="LVh-3K-2bA"/>
-                                <exclude reference="Qfa-MV-rya"/>
-                                <exclude reference="WGf-iT-IEO"/>
-                                <exclude reference="Yj4-fQ-fMO"/>
-                                <exclude reference="Ffh-Wh-oXh"/>
+                                <exclude reference="7Dc-9g-pmX"/>
+                                <exclude reference="UAw-Sm-PB9"/>
+                                <exclude reference="xgy-Bg-6A7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -932,16 +934,16 @@
                                 <include reference="lPg-Y3-MiE"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Lnp-Ml-yRA"/>
-                                <include reference="Plz-uM-IrZ"/>
-                                <include reference="U3W-9V-B6u"/>
-                                <include reference="z4i-Yc-XMt"/>
                                 <include reference="ERZ-L3-Sd8"/>
                                 <exclude reference="JoW-Yz-bIg"/>
                                 <include reference="LVh-3K-2bA"/>
                                 <include reference="Qfa-MV-rya"/>
                                 <exclude reference="WGf-iT-IEO"/>
                                 <include reference="Yj4-fQ-fMO"/>
+                                <include reference="Lnp-Ml-yRA"/>
+                                <include reference="Plz-uM-IrZ"/>
+                                <include reference="U3W-9V-B6u"/>
+                                <include reference="z4i-Yc-XMt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -950,14 +952,14 @@
                                 <include reference="QUO-hb-9r4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7Dc-9g-pmX"/>
-                                <include reference="UAw-Sm-PB9"/>
-                                <include reference="xgy-Bg-6A7"/>
+                                <include reference="Ffh-Wh-oXh"/>
                                 <include reference="DM9-Uu-WGj"/>
                                 <include reference="Eug-G0-Hcq"/>
                                 <include reference="oJc-dH-OBA"/>
                                 <include reference="qW5-yu-kI2"/>
-                                <include reference="Ffh-Wh-oXh"/>
+                                <include reference="7Dc-9g-pmX"/>
+                                <include reference="UAw-Sm-PB9"/>
+                                <include reference="xgy-Bg-6A7"/>
                             </mask>
                         </variation>
                     </view>

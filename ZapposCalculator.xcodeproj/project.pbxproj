@@ -18,7 +18,6 @@
 		965FD3A91C6AE0A9000899AD /* calculatorButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3A71C6AE0A9000899AD /* calculatorButton@2x.png */; };
 		965FD3AC1C6AE192000899AD /* calculatorButton_op.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3AA1C6AE192000899AD /* calculatorButton_op.png */; };
 		965FD3AD1C6AE192000899AD /* calculatorButton_op@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 965FD3AB1C6AE192000899AD /* calculatorButton_op@2x.png */; };
-		96A6C2281C677310003E25F6 /* OperationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6C2271C677310003E25F6 /* OperationEvaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		965FD3A71C6AE0A9000899AD /* calculatorButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorButton@2x.png"; sourceTree = "<group>"; };
 		965FD3AA1C6AE192000899AD /* calculatorButton_op.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculatorButton_op.png; sourceTree = "<group>"; };
 		965FD3AB1C6AE192000899AD /* calculatorButton_op@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculatorButton_op@2x.png"; sourceTree = "<group>"; };
-		96A6C2271C677310003E25F6 /* OperationEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationEvaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 			children = (
 				960973841C66F55B00901D0D /* AppDelegate.swift */,
 				960973861C66F55B00901D0D /* ViewController.swift */,
-				96A6C2271C677310003E25F6 /* OperationEvaluator.swift */,
 				960973881C66F55B00901D0D /* Main.storyboard */,
 				9609738B1C66F55B00901D0D /* Assets.xcassets */,
 				9609738D1C66F55B00901D0D /* LaunchScreen.storyboard */,
@@ -181,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A6C2281C677310003E25F6 /* OperationEvaluator.swift in Sources */,
 				960973871C66F55B00901D0D /* ViewController.swift in Sources */,
 				960973851C66F55B00901D0D /* AppDelegate.swift in Sources */,
 			);
