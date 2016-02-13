@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var landscapeLabel: UILabel!
     //@IBOutlet weak var calculationsLabel: CBAutoScrollLabel!
-    @IBOutlet weak var mainScreenLabel: UILabel!
+    @IBOutlet weak var mainScreenLabel: DisplayLabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated);
@@ -122,7 +122,10 @@ class ViewController: UIViewController {
         }
         else
         {
-            currentNum = NSMutableString(format:"-%@", currentNum);
+            if(currentNum.integerValue != 0)
+            {
+                currentNum = NSMutableString(format:"-%@", currentNum);
+            }
         }
 
     }
